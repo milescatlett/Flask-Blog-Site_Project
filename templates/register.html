@@ -1,0 +1,19 @@
+{%  from "includes/_form_field.html" import render_form_field %}
+{% extends "layout.html" %}
+{% block body %}
+<h2> Sign up </h2>
+    <form action="" method="post">
+        {{ form.csrf_token }}
+        {{ render_form_field(form.name) }}
+        {{ render_form_field(form.email) }}
+        {{ render_form_field(form.password) }}
+        {{ render_form_field(form.confirm) }}
+        <div class="form-group">
+            {{ form.recaptcha }}
+        </div>
+        <div class="form-group">
+            {{ form.submit(class_="btn btn-primary") }}
+        </div>
+    </form>
+    {{ msg }}
+{% endblock %}

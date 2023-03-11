@@ -1,0 +1,18 @@
+{%  from "includes/_form_field.html" import render_form_field %}
+{% extends "layout.html" %}
+{% block body %}
+<h2> Form </h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        {{ form.csrf_token }}
+        {{ render_form_field(form.title) }}
+        {{ render_form_field(form.text) }}
+        {{ render_form_field(form.image) }}
+        {{ render_form_field(form.emgithub) }}
+        {{ render_form_field(form.youtube) }}
+        {{ render_form_field(form.type) }}
+        {{ render_form_field(form.keywords) }}
+        <div class="form-group">
+            {{ form.submit(class_="btn btn-primary") }}
+        </div>
+    </form>
+{% endblock %}
