@@ -3,7 +3,7 @@ from flask import Blueprint, render_template, session, redirect, url_for, reques
 from werkzeug.utils import secure_filename
 from models import Page
 from forms import PageForm
-from app import db
+from passenger_wsgi import db
 
 admin = Blueprint('admin', __name__, url_prefix='/admin')
 project_root = os.path.dirname(os.path.abspath(__file__))

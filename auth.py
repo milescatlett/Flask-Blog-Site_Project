@@ -2,7 +2,7 @@ import os
 from flask import Blueprint, session, redirect, url_for, render_template
 from forms import LoginForm, RegisterForm
 from models import User
-from app import db
+from passenger_wsgi import db
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_mailman import EmailMessage
 

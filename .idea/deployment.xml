@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="a2Hosting" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" showNewOnSourceInSync="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="a2Hosting">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/new_blog" local="$PROJECT_DIR$" web="/" />
+            <mapping local="" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
