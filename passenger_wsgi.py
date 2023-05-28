@@ -6,7 +6,6 @@ from models import db
 from routes import site
 from auth import auth
 from admin import admin
-from create_db import create_db
 load_dotenv()
 
 project_root = os.path.dirname(os.path.realpath('__file__'))
@@ -40,7 +39,6 @@ def create_app():
     db.init_app(app)
     Mail(app)
     with app.app_context():
-        create_db()
         db.create_all()
     return app
 
